@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="24dp"
+        android:text="Nhập trong khoảng từ :"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTex5" />
+
+    <EditText
+        android:id="@+id/edtNum1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="1"
+        android:textColor="#FF0000"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />\
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="đến :"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtNum2"
+        app:layout_constraintEnd_toStartOf="@+id/edtNum2"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum1" />
+
+    <EditText
+        android:id="@+id/edtNum2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:hint="10"
+        android:textColor="#FF0000"
+        app:layout_constraintEnd_toEndOf="@+id/edtNum1"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/edtNum1" />
+
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="162dp"
+        android:text="Xúc xắc"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/txtTex1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lần 1:"
+        android:textColor="#fff000"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTex2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lần 2:"
+        android:textColor="#E91E63"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTex1"
+        app:layout_constraintStart_toStartOf="@+id/txtTex1"
+        app:layout_constraintTop_toBottomOf="@+id/txtTex1" />
+
+    <TextView
+        android:id="@+id/txtTex3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lần 3:"
+        android:textColor="#673AB7"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTex2"
+        app:layout_constraintStart_toStartOf="@+id/txtTex2"
+        app:layout_constraintTop_toBottomOf="@+id/txtTex2" />
+
+    <TextView
+        android:id="@+id/txtTex5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lần 5:"
+        android:textColor="#00BCD4"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTex4"
+        app:layout_constraintStart_toStartOf="@+id/txtTex4"
+        app:layout_constraintTop_toBottomOf="@+id/txtTex4" />
+
+    <TextView
+        android:id="@+id/txtTex4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Lần 4:"
+        android:textColor="#FF5722"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtTex3"
+        app:layout_constraintStart_toStartOf="@+id/txtTex3"
+        app:layout_constraintTop_toBottomOf="@+id/txtTex3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
